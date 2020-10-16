@@ -26,13 +26,27 @@ def members(request):
 
 
 @csrf_exempt
-def member(request, pk):
-    data = Member.objects.get(pk=pk)  # 폰번호가 같은 데이터 하나만 찾기
+def member(request, phone):
+    data = Member.objects.get(pk=phone)  # 폰번호가 같은 데이터 하나만 찾기
 
     # 사용자 정보 조회
     if request.method == 'GET':
         serializer = MemberSerializer(data)
         return JsonResponse(serializer.data, safe=False)
+
+
+@csrf_exempt
+def checkNick(request, nick):
+
+    # 사용자 정보 조회
+    if request.method == 'GET':
+        data = Member.objects.filter(nick=nick)
+        if len(data) != 0:
+            is_member = 1
+        else:
+            is_member = 0
+
+        return JsonResponse({'isMember': is_member})
 
 
 @csrf_exempt

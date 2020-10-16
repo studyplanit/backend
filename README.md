@@ -7,6 +7,7 @@ SPLIT 구성원들이 rest api를 쉽게 이해하고 사용하기 위해 작성
 - **POST** /member "신규 회원가입"
 - **GET** /member "사용자 전체 조회"
 - **GET** /member/{id} "사용자 정보 조회"
+- **GET** /member/{nick} "닉네임 중복확인"
 - **GET** /member/sms-auth/{phone} "인증문자 발송"
 
 # plan

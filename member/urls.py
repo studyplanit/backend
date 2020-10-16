@@ -3,8 +3,9 @@ from . import views
 
 urlpatterns = [
     path('', views.members),
-    path('/<int:pk>', views.member),
-    path('/sms-auth/<str:phone>', views.smsAuth)
+    path('<int:pk>', views.member),
+    path('<str:nick>', views.checkNick),
+    path('sms-auth/<str:phone>', views.smsAuth)
 ]
 
 
