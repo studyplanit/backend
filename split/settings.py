@@ -13,8 +13,8 @@ SECRET_KEY = 'hla@n+_o80knscb+nlq^mr!h66uaabniv^#qj9eutbk(u(^r*v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['203.245.28.184','studyplanet.kr']
+ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['203.245.28.184','studyplanet.kr']
 
 # Application definition
 
@@ -75,8 +75,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'split',
         'USER' : 'root',
-        'PASSWORD' : 'lzsh05a05!',
-        # 'PASSWORD' : '1234',
+        # 'PASSWORD' : 'lzsh05a05!',
+        'PASSWORD' : '1234',
         'HOST' : '127.0.0.1',
         'PORT' : '3306'
     }

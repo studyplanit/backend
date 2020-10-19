@@ -2,9 +2,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.members),
+    path('', views.insert_member),
     path('<int:pk>', views.member),
-    path('<str:nick>', views.checkNick),
+    path('check-nick', views.checkNick),
     path('sms-auth/<str:phone>', views.smsAuth)
 ]
 

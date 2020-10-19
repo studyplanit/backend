@@ -5,7 +5,8 @@ from .models import Member
 class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = Member
-        fields = ['nickname','phone','mail','point']
+        fields = ['id','nickname','phone']
+
 
 
 
