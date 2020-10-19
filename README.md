@@ -1,15 +1,10 @@
 # SPLIT Restful_API Guide
 
-SPLIT 구성원들이 rest api를 쉽게 이해하고 사용하기 위해 작성된 스타일 가이드입니다. 본 문서에 나와있지 않은 규칙은 아래 문서를 따릅니다.
-
+기본 url - http://studyplanet.kr 또는 http://203.245.28.184
 # member
 
-- **POST** /member "신규 회원가입"
-- **GET** /member "사용자 전체 조회"
+- **POST** /member/ "신규 회원가입"
 - **GET** /member/{id} "사용자 정보 조회"
-- **GET** /member/{nick} "닉네임 중복확인"
+- **POST** /member/check-nick "닉네임 중복확인"
 - **GET** /member/sms-auth/{phone} "인증문자 발송"
-
-# plan
-
 
